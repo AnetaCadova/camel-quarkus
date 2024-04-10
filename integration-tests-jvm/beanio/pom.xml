@@ -31,10 +31,10 @@
     <description>Integration tests for Camel Quarkus BeanIO extension</description>
 
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-beanio</artifactId>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy</artifactId>
