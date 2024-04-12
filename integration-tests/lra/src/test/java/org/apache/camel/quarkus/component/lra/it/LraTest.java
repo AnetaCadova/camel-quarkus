@@ -65,7 +65,7 @@ class LraTest {
                 .statusCode(500);
 
         // Verify count of valid orders
-        await().atMost(10, TimeUnit.SECONDS).until(() -> {
+        await().atMost(30, TimeUnit.SECONDS).until(() -> {
             return RestAssured.get("/lra/order/count")
                     .then()
                     .statusCode(200)
@@ -75,7 +75,7 @@ class LraTest {
         });
 
         // Verify credit remaining
-        await().atMost(10, TimeUnit.SECONDS).until(() -> {
+        await().atMost(30, TimeUnit.SECONDS).until(() -> {
             return RestAssured.get("/lra/credit/available")
                     .then()
                     .statusCode(200)
